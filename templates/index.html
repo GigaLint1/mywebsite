@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>My learning website</title>
+    <link rel="stylesheet" type="text/css" href="./resources/style.css"/>
+</head>
+<body>
+    <h1>Welcome!</h1>
+    <img height="200px" src="https://i.imgur.com/bH8qjA6.jpg" alt="Greg's Face" id="profile">
+        <p>Hello {{user}}! Welcome to the website I built as a side project during my NS. </p>
+    <h1>Objective:</h1>
+        <ol>
+            <li>Build graphs and charts to display a wide variety of datasets</li>
+            <li>Act as a portfolio</li>
+        </ol>
+    {% for x in range(10) %}
+        {% if x % 2 == 1 %}
+            <p>{{x}}</p>
+        {% endif %}
+    {% endfor %}
+</body>
+</html>
